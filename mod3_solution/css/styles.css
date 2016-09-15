@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+/**** HEADER ****/
+#header-nav {
+	border: 0;
+	border-radius: 0;
+	background-color: #ccc;
+}
+
+.navbar-header {
+	background-color: #ccc;
+}
+
+.navbar-default .navbar-brand {
+	color: #000;
+}
+
+/*navbar toggle*/
+.navbar-default .navbar-toggle {
+	border-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:active {
+	color: #ddd;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active {
+	border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:active .icon-bar {
+	background-color: #fff;
+}
+
+#nav-list {
+	text-align: center;
+}
+
+.menu-items {
+	padding:  7px;
+}
+
+.menu-items:nth-child(3) {
+	padding: 7px 0 0 7px;
+}
+
+.item {
+	background: #ccc;
+	padding: 5px;
+}
+
+.item h3 {
+	margin: 0;
+	padding: 3px 0;
+}
+
+.item p {
+	padding: 5px;
+}
+
+#nav-list li a {
+	background: #aaa;
+	border-bottom: 1px solid #888;
+	color: #fff;
+}
+
+#nav-list li a:hover {
+	background: #ccc;
+	color: #000;
+	border-bottom: 1px solid #999;
+}
+
+/**** MAIN CONTENT ****/
+.row {
+	padding-top: 10px;
+}
+
+/**** MEDIA QUERIES ****/
+
+@media (min-width: 1200px) {
+	#content, .container {
+		width: 90%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.menu-items:nth-child(3) {
+		padding: 7px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.menu-items:nth-child(3) {
+	padding: 7px;
+	}
+	#content {
+		width: 90%;
+	}
+	.container {
+		width: 90%;
+	}
+	h1 {
+		margin-top: 7px;
+	}
+}
+
+@media (max-width: 767px) {
+	#collapsable-nav {
+		margin: 0 -60px;
+	}
+	.menu-items:nth-child(1) {
+		padding-top: 2px;
+	}
+	.menu-items:nth-child(3) {
+	padding: 7px;
+	}
+	#content {
+		width: 90%;
+	}
+	h1 {
+		margin-top: 3px;
+		font-size: 1.85em;
+	}
+	h3 {
+		font-size: 1.50em;
+	}
+	p {
+		font-size: .875em;
+	}
+}
